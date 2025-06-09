@@ -6,3 +6,5 @@ A fungi game.
 3. Double click Mycelium.exe to play the game.
 
 Hope you enjoy!
+
+Game created the framework LÖVE. Read more about it in ./Mycelium/readme.txt
