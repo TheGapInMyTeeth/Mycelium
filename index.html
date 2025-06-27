@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mycelium</title>
+</head>
+<body>
+  <h1>Mycelium</h1>
+
+  <div id="readme">
+    <em>Loading README...</em>
+  </div>
+
+  <hr>
+
+  <ul>
+    <li><a href="Mycelium/" download="Mycelium">Download Source Code</a></li>
+    <li><a href="Mycelium.zip" download="Mycelium.zip">Download the Game</a></li>
+    <li><a href="README.md" download="README.md">Read Me</a></li>
+  </ul>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch('README.md')
+      .then(res => res.text())
+      .then(md => {
+        document.getElementById('readme').innerHTML = marked.parse(md);
+      })
+      .catch(err => {
+        document.getElementById('readme').innerHTML = '<em>Could not load README.md</em>';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
