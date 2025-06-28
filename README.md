@@ -8,3 +8,5 @@ A fungi game.
 Hope you enjoy!
 
 Game created using the framework LÖVE. Read more about it in ./Mycelium/readme.txt
+
+By Vasco Cardoso
