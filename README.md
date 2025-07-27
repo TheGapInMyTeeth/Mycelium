@@ -1,5 +1,5 @@
-# Mycelium
-A fungi game.
+# Mycelium,
+a fungi game
 
 1.Download the game.
 2.Double click Mycelium.exe to play the game.
